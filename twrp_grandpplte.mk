@@ -24,13 +24,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from grandpplte device
 $(call inherit-product, device/samsung/grandpplte/device.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# Inherit some common TWRP stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := grandpplte
-PRODUCT_NAME := omni_grandpplte
+PRODUCT_NAME := twrp_grandpplte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G532G
 PRODUCT_MANUFACTURER := samsung
