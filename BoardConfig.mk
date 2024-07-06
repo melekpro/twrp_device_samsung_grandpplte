@@ -22,12 +22,14 @@ DEVICE_PATH := device/samsung/grandpplte
 ALLOW_MISSING_DEPENDENCIES := true
 LZMA_RAMDISK_TARGETS := recovery
 LZMA_COMPRESSION := -9
+
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_VARIANT := cortex-a53
+TARGET_CPU_SMP := true
+TARGET_CPU_VARIANT := generic
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := grandpplte
