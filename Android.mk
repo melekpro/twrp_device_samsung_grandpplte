@@ -16,13 +16,9 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_DEVICE), grandpplte)
-
-# hack for prebuilt kernel
-$(shell (mkdir -p $(OUT)/kernel))
 
 LOCAL_PATH := $(call my-dir)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
-ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
 
+ifeq ($(TARGET_DEVICE),grandpplte)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
