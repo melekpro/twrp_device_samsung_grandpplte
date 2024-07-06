@@ -22,8 +22,6 @@ DEVICE_PATH := device/samsung/grandpplte
 ALLOW_MISSING_DEPENDENCIES := true
 LZMA_RAMDISK_TARGETS := recovery
 LZMA_COMPRESSION := -9
-PLATFORM_SDK_VERSION := 23
-
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
